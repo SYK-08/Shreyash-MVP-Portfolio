@@ -1,5 +1,9 @@
 @import "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap";
-html, body {
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -116,6 +120,16 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */
