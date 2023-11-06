@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/design_desk.jpg";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = "Pen and paper on table";
 
 /**
  * Project list
@@ -31,28 +31,29 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Crack the Code: Mastering Logic in Programming",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+     "A medium article that focuses on improving logic in programming",
+    url: "https://medium.com/@kashyapshreyash826/crack-the-code-mastering-logic-in-programming-6cb79336b18e",
   },
   {
-    title: "Web Development for Beginners",
+    title: "House Prices Prediction program",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "A machine learning model that use Decision Tree Regression to predict House Prices from a given set of data.",
+    url: "https://github.com/SYK-08/FirstMLModel",
   },
   {
-    title: "My Resume Site",
+    title: "Machine Learning Model validation",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "A machine learning model that computes Mean Absolute Error from validation data and predicts house prices using Decision Tree Regression given a set of data.",
+    url: "https://github.com/SYK-08/ML-Model-Validation",
   },
+
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Real Time Data Plotting",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "A python program to plot graph from data generated in real time.",
+    url: "https://github.com/SYK-08/Real-time-data-plot",
   },
 ];
 
@@ -64,7 +65,12 @@ const Portfolio = () => {
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{
+              height: "90%",
+              width: "100%",
+              objectFit: "cover",
+              animation: "1s ease-out 0s 1 slideIn",
+            }}
             alt={imageAltText}
           />
         </div>
